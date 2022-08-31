@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: black;
+}
+#container{
+	width: 100%;
+	height: 100vh;
+	background:url("./gettyimages-1191008971-612x612\ \(1\).jpg")no-repeat center/cover;
+}
+#calculator{
+	width: 350px;
+	height: 530px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 80px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+	height: 140px;
+	background: #1e2244;
+	border: 20px solid rgb(0, 1, 25);
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 10px;
+	font-size: 18px;
+	color: #c1c1c1;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 20px 20px;
+	font-size: 30px;
+	color: #fff;
+}
+#keyboard{
+	height: 410px;
+	background: rgb(10, 11, 33);
+	border: 13px solid rgb(0, 1, 25);
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.number, .empty{
+	background-color: #eaedef;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
+button:hover{
+    background: #000;
+    color: white;
+}
+button{
+    transition: 0.4s;
+}
+#empty{
+	opacity: 0;
+}
+#clear{
+	background: linear-gradient(35deg, red, rgb(1, 250, 1), blue);
+}
+#backspace{
+	background: linear-gradient(35deg, rgb(60, 255, 0), rgb(251, 255, 0), rgb(217, 0, 255));
+}
+button:nth-child(3){
+	background: linear-gradient(35deg, rgb(247, 0, 255), rgb(1, 213, 250), rgb(255, 255, 0));
+}
